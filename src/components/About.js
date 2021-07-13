@@ -31,21 +31,21 @@ export default function About() {
             <img 
             src={ coloradoImage}
             alt= "Colorado"
-            className="absolute w-full"
+            className="absolute w-full rounded opacity-90"
             ></img>
-            <div className="p-10 lg:pt-48 container mx-auto relative">
-                <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20">
+            <div className=" flex p-6 lg:pt-48 container mx-auto relative">
+           
+                <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20 bg-opacity-10 bg-gradient-to-b from-gray-50 ">
                     <img 
                     src={urlFor(author.authorImage).url()} 
-                    className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8"
+                    className="rounded-lg w-32 h-32 lg:w-64 lg:h-64 mr-8"
                     alt={author.name}>
                     </img>
                     <div className="text-lg flex flex-col justify-center ">
-                        <h1 className="cursive text-6xl text-green-300 mb-4 ">
-                            Hey there. I'm{" "}
-                            <span className="text-green-100">{author.name}</span>
+                        <h1 className=" text-6xl text-green-300 mb-4 ">
+                            <span className=" cursive text-green-900 text-4xl text-green-100">{author.name}</span>
                         </h1>
-                        <div className="prose lg:prose-xl text-white">
+                        <div className="prose lg:prose-xl text-red-50">
                             <BlockContent 
                             blocks={author.bio} 
                             projectId="ufv5g491" 

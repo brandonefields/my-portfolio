@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../Client";
+import coloradoImage from "../Colorado.jpg"
 
 export default function Post() {
 
@@ -24,7 +25,7 @@ export default function Post() {
     }, [])
 
     return (
-        <main className="bg-green-50 min-h screen p-12">
+        <main className="bg-green-200 opacity-80 min-h screen p-12">
             <section className="container mx-auto">
                 <h1 className="text-5xl flex justify-center cursive">Blog Post Page</h1>
                 <h2 className="text-lg text-grey-600 flex justify-center mb-12">Welcome to my page of blog posts</h2>
@@ -35,7 +36,7 @@ export default function Post() {
                                 to={"/post/" + post.slug.current}
                                 key={post.slug.current}>
                                 <span
-                                    className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400"
+                                    className="block h-64 relative rounded shadow-2xl leading-snug bg-white border-l-8 border-green-400"
                                     key={index}
                                 >
                                     <img
@@ -43,7 +44,7 @@ export default function Post() {
                                         alt={post.mainImage.alt}
                                         className="w-full h-full rounded-r object-cover absolute" />
                                     <span
-                                        className="block relative h-full flex justify-end items-end pr-4 pb-4">
+                                        className="block relative h-full flex justify-end items-end pr-4 pb-4 opacity-1">
                                         <h3 className=" hover:text-green-200 tracking-widest text-grey-800 text-lg font-bold px-3 py-4 bg-green-800 text-green-50 bg-opacity-90 rounded shadow-2xl">{post.title}</h3>
                                     </span>
                                 </span>

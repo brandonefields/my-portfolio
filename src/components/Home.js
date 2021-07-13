@@ -10,7 +10,7 @@ export default function Home() {
                 className="absolute object-cover w-full h-full"
             ></img>
             <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8 ">
-                <h1 className=" bm-4 text-8xl text-green-200 font-bold cursive leading-none lg:leading-snug home-name"
+                <h1 className=" flex justify-center bm-4 text-8xl text-green-200 font-bold cursive leading-none lg:leading-snug home-name opacity-75"
                 >welcome</h1>
             </section>
         </main>

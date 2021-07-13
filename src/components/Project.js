@@ -18,7 +18,7 @@ export default function Project() {
     }, []);
 
     return (
-        <main className="bg-green-150 min-h-screen p-12">
+        <main className="bg-green-200 min-h-screen p-12">
             <section className="container mx-auto">
                 <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
                 <h2 className="text-lg text-gray-600 flex justify-center mb-12">Welcome to my projects page!
