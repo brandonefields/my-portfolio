@@ -1,4 +1,3 @@
-import { keyword } from "chalk";
 import React from "react"
 import backgroundImage from "../keyboard.jpg"
 

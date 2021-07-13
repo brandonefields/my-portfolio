@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react"
-import sanityClient from "../Client"
+import React, { useEffect, useState } from "react";
+import sanityClient from "../Client";
 
 export default function Project() {
     const [projectData, setProjectData] = useState(null);
 
     useEffect(() => {
         sanityClient.fetch(`*[_type == "project"]{
-            title'
-            date'
+            title,
+            date,
             place,
             description,
             projectType,
@@ -18,15 +18,15 @@ export default function Project() {
     }, []);
 
     return (
-        <main className="bg-green-100 min-h-screen p-12">
+        <main className="bg-green-150 min-h-screen p-12">
             <section className="container mx-auto">
                 <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
                 <h2 className="text-lg text-gray-600 flex justify-center mb-12">Welcome to my projects page!
                 </h2>
                 <section className="grid grid-cols-2 gap-8">
                     {projectData && projectData.map((project, index) => (
-                        <article className="relative rounded-lg shadow-xl bg-white p-16">
-                            <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
+                        <article className="relative rounded-lg shadow-xl bg-gradient-to-b from-yellow-50 via-green-100 to-yellow-50 p-16 border-r-8 border-color-grey-400 border-b-8">
+                            <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-green-500">
                                 <a
                                     href={project.link}
                                     alt={project.title}
@@ -54,7 +54,7 @@ export default function Project() {
                                     href={project.link}
                                     rel="noopener noreferrer"
                                     target="_blank"
-                                    className="text-red-500 font-bold hover:underline hover:text-red-400"
+                                    className="text-yellow-500 font-bold hover:underline hover:text-red-400 text-xl"
                                 >
                                     View The Project{" "}
                                     <span role="img" aria-label="right pointer">

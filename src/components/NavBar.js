@@ -6,32 +6,32 @@ import { SocialIcon } from "react-social-icons"
 
 export default function NavBar() {
     return (
-        <header className="bg-green-200">
+        <header className="bg-green-100">
             <div className="container mx-auto flex justify-between">
                 <nav className="flex">
                     <NavLink
                         to="/"
                         exact
                         activeClassName="text-white"
-                        className="inline-flex items-center py-6 px-3 mr-4 text-green-900 hover:text-green-500 text-4xl font-bold cursive tracking-widest"
+                        className="inline-flex items-center py-6 px-3 mr-4 text-green-900 hover:text-green-500 text-5xl font-bold cursive tracking-widest"
                     >Brandon</NavLink>
                     <NavLink
                         to="/post"
-                        className="inline-flex items-center py-3 px-3 my-6 text-green-500 hover:text-green-300"
-                        activeClassName="text-green-100 bg-green-600 rounded shadow-2xl"
+                        className="inline-flex items-center py-3 px-3 my-6 text-green-150 hover:text-green-600"
+                        activeClassName="text-green-100 bg-green-400 rounded shadow-2xl"
                     >Blog Posts</NavLink>
                     <NavLink
                         to="/project"
-                        className="inline-flex items-center py-3 px-3 my-6 text-green-500 hover:text-green-300"
-                        activeClassName="text-green-100 bg-green-600 rounded shadow-2xl"
+                        className="inline-flex items-center py-3 px-3 my-6 text-green-150 hover:text-green-600"
+                        activeClassName="text-green-100 bg-green-400 rounded shadow-2xl"
                     >Projects</NavLink>
                     <NavLink
                         to="/about"
-                        className="inline-flex items-center py-3 px-3 my-6 text-green-500 hover:text-green-300"
-                        activeClassName="text-green-100 bg-green-600 rounded shadow-2xl"
+                        className="inline-flex items-center py-3 px-3 my-6 text-green-150 hover:text-green-600"
+                        activeClassName="text-green-100 bg-green-400 rounded shadow-2xl"
                     >About Me!</NavLink>
                 </nav>
-                <div className="inline-flex py-3 px-3 my-6">
+                <div className="inline-flex py-3 px-3 my-6 shadow-2xl rounded-md bg-green-50">
                     <SocialIcon
                         url="https://github.com/brandonefields"
                         className=" mr-4" 
