@@ -31,7 +31,7 @@ export default function NavBar() {
                         activeClassName="text-red-100 bg-green-600"
                     >About Me!</NavLink>
                 </nav>
-                <div>
+                <div className="inline-flex py-3 px-3 my-6">
                     <SocialIcon
                         url="https://github.com/brandonefields"
                         className=" mr-4" 

@@ -1,6 +1,0 @@
-import sanityClient from '@sanityClient'
-
-export default sanityClient({
-    projectId:"ufv5g491",
-    dataset: "production"
-})
