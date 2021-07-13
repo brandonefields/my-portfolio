@@ -17,18 +17,18 @@ export default function NavBar() {
                     >Brandon</NavLink>
                     <NavLink
                         to="/post"
-                        className="inline-flex items-center py-3 px-3 my-6 text-red-200 hover:text-green-900"
-                        activeClassName="text-red-100 bg-green-600"
+                        className="inline-flex items-center py-3 px-3 my-6 text-green-500 hover:text-green-300"
+                        activeClassName="text-green-100 bg-green-600 rounded shadow-2xl"
                     >Blog Posts</NavLink>
                     <NavLink
                         to="/project"
-                        className="inline-flex items-center py-3 px-3 my-6 text-red-200 hover:text-green-900"
-                        activeClassName="text-red-100 bg-green-600"
+                        className="inline-flex items-center py-3 px-3 my-6 text-green-500 hover:text-green-300"
+                        activeClassName="text-green-100 bg-green-600 rounded shadow-2xl"
                     >Projects</NavLink>
                     <NavLink
                         to="/about"
-                        className="inline-flex items-center py-3 px-3 my-6 text-red-200 hover:text-green-800"
-                        activeClassName="text-red-100 bg-green-600"
+                        className="inline-flex items-center py-3 px-3 my-6 text-green-500 hover:text-green-300"
+                        activeClassName="text-green-100 bg-green-600 rounded shadow-2xl"
                     >About Me!</NavLink>
                 </nav>
                 <div className="inline-flex py-3 px-3 my-6">
