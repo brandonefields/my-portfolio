@@ -35,7 +35,7 @@ export default function About() {
             ></img>
             <div className=" flex p-6 lg:pt-48 container mx-auto relative">
            
-                <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20 bg-opacity-10 bg-gradient-to-b from-gray-50 ">
+                <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20 bg-opacity-40 bg-gradient-to-b from-gray-50">
                     <img 
                     src={urlFor(author.authorImage).url()} 
                     className="rounded-lg w-32 h-32 lg:w-64 lg:h-64 mr-8"
