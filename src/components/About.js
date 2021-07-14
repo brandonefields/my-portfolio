@@ -45,7 +45,7 @@ export default function About() {
                         <h1 className=" text-6xl text-green-300 mb-4 ">
                             <span className=" cursive text-green-900 text-4xl text-green-100">{author.name}</span>
                         </h1>
-                        <div className="prose lg:prose-xl text-red-50">
+                        <div className=" author-info leading-loose text-red-50">
                             <BlockContent 
                             blocks={author.bio} 
                             projectId="ufv5g491" 
