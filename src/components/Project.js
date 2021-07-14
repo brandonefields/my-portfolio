@@ -25,9 +25,10 @@ export default function Project() {
                 </h2>
                 <section className="grid grid-cols-2 gap-8">
                     {projectData && projectData.map((project, index) => (
-                        <article className="relative rounded-lg shadow-xl bg-gradient-to-b from-yellow-50 via-green-100 to-yellow-50 p-16 border-r-8 border-color-grey-400 border-b-8">
-                            <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-green-500">
+                        <article className=" relative rounded-lg shadow-2xl bg-gradient-to-b from-green-50 to-yellow-50 p-16">
+                            <h3 className=" underline text-green-900 text-3xl font-bold mb-2 hover:text-green-500">
                                 <a
+                                    className="author-info"
                                     href={project.link}
                                     alt={project.title}
                                     target="_blank"
@@ -36,7 +37,7 @@ export default function Project() {
                                     {project.title}
                                 </a>
                             </h3>
-                            <div className="text-gray-500 text-xs space-x-4">
+                            <div className="text-gray-400 text-s space-x-4">
                                 <span>
                                     <strong className="font-bold">Finished on</strong>:{" "}
                                     {new Date(project.date).toLocaleDateString()}
@@ -49,14 +50,14 @@ export default function Project() {
                                     <strong className="font-bold">Type</strong>:{" "}
                                     {project.projectType}
                                 </span>
-                                <p className="my-6 text-lg text-gray-700 leading-relaxed">{project.description}</p>
+                                <p className=" body-font my-6 text-xl text-green-900 leading-relaxed">{project.description}</p>
                                 <a
                                     href={project.link}
                                     rel="noopener noreferrer"
                                     target="_blank"
-                                    className="text-yellow-500 font-bold hover:underline hover:text-red-400 text-xl"
+                                    className="text-yellow-500 font-bold hover:underline hover:text-red-600 text-xl"
                                 >
-                                    View The Project{" "}
+                                     View This Project{" "}
                                     <span role="img" aria-label="right pointer">
                                         👉
                                     </span>
