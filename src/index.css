@@ -2,6 +2,12 @@
 @import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");   
 @import url("https://fonts.googleapis.com/css2?family=Monofett&display=swap");
 
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .cursive {
   font-family: 'Monofett', cursive;
   font-weight: 700;
