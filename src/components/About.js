@@ -52,6 +52,7 @@ export default function About() {
                                 dataset="production" />
                             <a
                                 target="_blank"
+                                rel='noreferrer'
                                 className="resume-link text-yellow-400 hover:underline hover:text-red-400"
                                 href="https://raw.githubusercontent.com/brandonefields/my-portfolio/main/blue%20resume.png"
                             >
